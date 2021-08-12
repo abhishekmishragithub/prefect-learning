@@ -1,8 +1,10 @@
 from prefect import Flow, task
 
+
 @task(log_stdout=True)
 def say_hello():
     print("Hello, world!")
+
 
 with Flow("hello task") as f:
     say_hello()

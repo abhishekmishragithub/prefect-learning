@@ -1,9 +1,8 @@
-import prefect
-from prefect import task, Flow
-import datetime
 import random
 from time import sleep
-from prefect.triggers import manual_only
+
+import prefect
+from prefect import Flow, task
 
 
 @task
